@@ -23,8 +23,13 @@ header div {
     text-align: right;
 }
 
+.sub-nav {
+    margin-bottom: 1em;
+}
+
 .sub-nav ul {
     justify-content: flex-end;
+    gap: 1.5em;
 }
 
 .sub-nav a {
@@ -46,8 +51,8 @@ main {
     background-color: grey;
     border-radius: 10px;
     border-bottom: solid 5px #06b0dd;
-    padding: 0.1em;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .main-nav a {
@@ -55,7 +60,25 @@ main {
 }
 
 .main-nav ul {
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0.65em 0.25em;
+}
+
+#selected {
+    background-color: #06b0dd;
+    color: white;
+    cursor: default;
+}
+
+.main-nav li:hover, .main-nav li:hover a {
+    background-color: #61c9e5;
+    color: black;
+    cursor: pointer;
 }
 
 /* FOOTER */
@@ -105,7 +128,7 @@ h2 {
 
 nav ul {
     display: flex;
-    gap: 1.5em;
+    margin: 0;
 }
 
 li {
