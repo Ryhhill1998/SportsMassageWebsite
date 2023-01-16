@@ -136,6 +136,11 @@ figcaption {
     padding: 0.5em;
 }
 
+.bullet-list li {
+    list-style: circle;
+    margin-left: 2em;
+}
+
 img {
     width: 500px;
 }
