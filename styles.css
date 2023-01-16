@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+h1 {
+    color: #06b0dd;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 2em;
+}
+
+.sub-nav ul {
+    justify-content: flex-end;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    width: 50vw;
+}
+
+main nav ul {
+    justify-content: center;
+}
+
+.logo {
+    width: 400px;
+}
+
+.contact-info {
+    text-align: right;
+}
