@@ -7,13 +7,15 @@
 }
 
 body {
-    padding: 1em 2em;
+    padding: 1em 0 0 0;
+    margin: 0;
 }
 
 /* HEADER */
 header {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto 1.5em;
 }
 
 header div {
@@ -25,7 +27,7 @@ header div {
     justify-content: flex-end;
 }
 
-.sub-nav a:link, .sub-nav a:visited {
+.sub-nav a {
     color: black;
 }
 
@@ -35,33 +37,67 @@ header div {
 
 /* MAIN */
 main {
-    max-width: 1050px;
-    margin: 0 auto;
+    padding: 0 5em;
+    margin: 0 auto 5em;
 }
 
-main nav {
+.main-nav {
     background-color: grey;
     border-radius: 10px;
     border-bottom: solid 5px #06b0dd;
     padding: 0.1em;
+    margin: 0 auto;
 }
 
-main nav a:visited, main nav a:link {
+.main-nav a {
     color: white;
 }
 
-main nav ul {
-    justify-content: center;
+.main-nav ul {
+    justify-content: space-evenly;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: grey;
+    padding: 1em 0;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 5em;
+}
+
+footer a, footer {
+    color: white;
 }
 
 /* --------------- HEADINGS --------------- */
 
-h1 {
+h1, h2 {
     color: #06b0dd;
+}
+
+h1 {
     text-align: center;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
 }
 
 /* --------------- GENERAL --------------- */
+
+.container {
+    max-width: 1150px;
+}
 
 nav ul {
     display: flex;
@@ -83,7 +119,18 @@ input {
 
 figure {
     float: right;
-    margin: 0 0 2em 2em;
+    margin: 0 0 2.5em 2.5em;
+    padding-bottom: 0.25em;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #06b0dd;
+}
+
+figcaption {
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0.5em;
 }
 
 img {
