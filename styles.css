@@ -1,24 +1,71 @@
+
+/* --------------- LAYOUT --------------- */
+
 * {
     box-sizing: border-box;
     padding: 0;
 }
 
-h1 {
-    color: #06b0dd;
+body {
+    padding: 1em 2em;
 }
 
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
 }
 
-nav ul {
-    display: flex;
-    gap: 2em;
+header div {
+    width: 100%;
+    text-align: right;
 }
 
 .sub-nav ul {
     justify-content: flex-end;
+}
+
+.sub-nav a:link, .sub-nav a:visited {
+    color: black;
+}
+
+.logo {
+    width: 400px;
+}
+
+/* MAIN */
+main {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+main nav {
+    background-color: grey;
+    border-radius: 10px;
+    border-bottom: solid 5px #06b0dd;
+    padding: 0.1em;
+}
+
+main nav a:visited, main nav a:link {
+    color: white;
+}
+
+main nav ul {
+    justify-content: center;
+}
+
+/* --------------- HEADINGS --------------- */
+
+h1 {
+    color: #06b0dd;
+    text-align: center;
+}
+
+/* --------------- GENERAL --------------- */
+
+nav ul {
+    display: flex;
+    gap: 1.5em;
 }
 
 li {
@@ -30,17 +77,22 @@ a {
 }
 
 input {
-    width: 50vw;
+    width: 100%;
+    max-width: 500px;
 }
 
-main nav ul {
-    justify-content: center;
+figure {
+    float: right;
+    margin: 0 0 2em 2em;
 }
 
-.logo {
-    width: 400px;
+img {
+    width: 500px;
 }
 
-.contact-info {
-    text-align: right;
-}
+
+
+
+
+
+
