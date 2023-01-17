@@ -169,6 +169,7 @@ footer h2 {
 h1, h2 {
     color: #06b0dd;
     font-family: 'Roboto', sans-serif;
+    margin: 0.75em 0;
 }
 
 h1 {
@@ -177,7 +178,7 @@ h1 {
 
 h2 {
     font-size: 1.8rem;
-    margin-bottom: 1em;
+    margin-bottom: 0.25em;
 }
 
 /* --------------- GENERAL --------------- */
@@ -208,6 +209,7 @@ a {
 
 p {
     line-height: 1.7em;
+    margin-top: 1.5em;
 }
 
 .search-box {
@@ -231,7 +233,9 @@ button {
     color: white;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    padding: 0.35em;
+    font-size: 1rem;
+    padding: 0.25em;
+    margin-left: 0;
 }
 
 figure {
@@ -302,8 +306,8 @@ img {
 @media (max-width: 600px) {
     figure {
         float: none;
-        margin-left: 0;
-        width: 90%;
+        margin: 0 auto;
+        width: 100%;
     }
 }
 
