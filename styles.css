@@ -21,7 +21,7 @@ header {
     margin: 0 auto 1.5em;
 }
 
-header div {
+header > div {
     width: 100%;
     text-align: right;
 }
@@ -54,7 +54,6 @@ header div {
     background-color: grey;
     border-radius: 10px;
     border-bottom: solid 5px #06b0dd;
-    height: 65px;
     overflow: hidden;
 }
 
@@ -211,9 +210,28 @@ p {
     line-height: 1.7em;
 }
 
+.search-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
 input {
-    width: 90%;
-    max-width: 500px;
+    width: 80%;
+    max-width: 400px;
+    padding: 0.25em 0.25em 0.25em 0.5em;
+    border: solid 1px #c2c2c2;
+    border-right: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+button {
+    border: solid 2px #efa420;
+    background-color: #efa420;
+    color: white;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 0.35em;
 }
 
 figure {
@@ -260,7 +278,6 @@ img {
 
     #hamburger {
         display: inline;
-        line-height: 45px;
     }
 
     .header-extras {
@@ -275,6 +292,10 @@ img {
         align-items: center;
         flex-direction: column;
         gap: 1em;
+    }
+
+    .search-box {
+        justify-content: center;
     }
 }
 
