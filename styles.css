@@ -53,8 +53,8 @@ header div {
 .main-nav {
     background-color: grey;
     border-radius: 10px;
-    /*border-radius: 10px 10px 0 0;*/
     border-bottom: solid 5px #06b0dd;
+    height: 65px;
     overflow: hidden;
 }
 
@@ -75,7 +75,7 @@ header div {
     padding: 0.65em 0.75em;
 }
 
-.main-nav #selected {
+#nav-selected {
     background-color: #06b0dd;
     color: white;
     cursor: default;
@@ -118,6 +118,12 @@ header div {
     background-color: #61c9e5;
     color: black;
     cursor: pointer;
+}
+
+#dropdown-selected {
+    background-color: #06b0dd;
+    color: white;
+    cursor: default;
 }
 
 /* MAIN */
@@ -172,10 +178,6 @@ h1 {
 h2 {
     font-size: 1.8rem;
     margin-bottom: 1em;
-}
-
-.homepage-heading {
-    text-align: center;
 }
 
 /* --------------- GENERAL --------------- */
@@ -247,12 +249,17 @@ img {
 
 /* --------------- MEDIA QUERIES --------------- */
 @media (max-width: 750px) {
+    .main-nav {
+
+    }
+
     .main-nav li {
         display: none;
     }
 
     #hamburger {
         display: inline;
+        line-height: 45px;
     }
 
     .header-extras {
