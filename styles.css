@@ -40,7 +40,7 @@ header div {
 }
 
 .logo {
-    width: 400px;
+    max-width: 400px;
 }
 
 /* MAIN */
@@ -87,6 +87,10 @@ main {
     cursor: pointer;
 }
 
+.hamburger {
+    display: none;
+}
+
 /* FOOTER */
 footer {
     width: 100%;
@@ -101,14 +105,14 @@ footer div {
 }
 
 footer .container-smaller {
-    display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 0 auto;
 }
 
 footer .container-smaller > div {
     flex-direction: column;
     flex: 1 1 0;
+    min-width: 250px;
 }
 
 footer a, footer {
@@ -202,7 +206,37 @@ img {
 }
 
 /* --------------- MEDIA QUERIES --------------- */
+@media (max-width: 750px) {
+    .main-nav ul li a {
+        display: none;
+    }
 
+    .hamburger {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 0.65em 0.75em;
+        line-height: 100%;
+    }
+
+    .header-extras {
+        text-align: center;
+    }
+    .sub-nav {
+        display: none;
+    }
+
+    header {
+        align-items: center;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    footer .container-smaller {
+        /*flex-direction: column;*/
+        flex-wrap: wrap;
+    }
+}
 
 
 
