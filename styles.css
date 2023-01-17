@@ -32,7 +32,7 @@ header div {
 
 .sub-nav ul {
     justify-content: flex-end;
-    gap: 1.5em;
+    gap: 1em;
 }
 
 .sub-nav a {
@@ -45,7 +45,6 @@ header div {
 
 /* MAIN */
 main {
-    padding: 0 5em;
     margin: 0 auto 5em;
     min-height: 450px;
 }
@@ -56,7 +55,6 @@ main {
     border-bottom: solid 5px #06b0dd;
     margin: 0 auto;
     overflow: hidden;
-    word-wrap: break-word;
 }
 
 .main-nav ul {
@@ -73,7 +71,7 @@ main {
     display: inline-block;
     width: 100%;
     height: 100%;
-    padding: 0.65em 0;
+    padding: 0.65em 0.75em;
     line-height: 100%;
 }
 
@@ -98,11 +96,19 @@ footer {
     font-size: 0.9rem;
 }
 
-footer > div {
+footer div {
     display: flex;
-    justify-content: space-between;
+}
+
+footer .container-smaller {
+    display: flex;
+    justify-content: space-evenly;
     margin: 0 auto;
-    padding: 0 5em;
+}
+
+footer .container-smaller > div {
+    flex-direction: column;
+    flex: 1 1 0;
 }
 
 footer a, footer {
@@ -137,6 +143,12 @@ h2 {
 
 .container {
     max-width: 1150px;
+    width: 95%;
+}
+
+.container-smaller {
+    max-width: 1000px;
+    width: 90%;
 }
 
 nav ul {
@@ -157,7 +169,7 @@ p {
 }
 
 input {
-    width: 100%;
+    width: 90%;
     max-width: 500px;
 }
 
@@ -188,8 +200,7 @@ img {
     width: 100%;
 }
 
-
-
+/* --------------- MEDIA QUERIES --------------- */
 
 
 
