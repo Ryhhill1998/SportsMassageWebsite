@@ -270,5 +270,11 @@ img {
     }
 }
 
-
+@media (max-width: 600px) {
+    figure {
+        float: none;
+        margin-left: 0;
+        width: 90%;
+    }
+}
 
