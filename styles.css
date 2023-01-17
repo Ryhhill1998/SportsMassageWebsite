@@ -91,6 +91,7 @@ header div {
     cursor: pointer;
     padding: 0.65em 0.75em;
     display: none;
+    color: white;
 }
 
 /* DROPDOWN */
