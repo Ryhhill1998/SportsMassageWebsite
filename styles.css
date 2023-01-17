@@ -1,3 +1,5 @@
+/* --------------- FONT IMPORTS --------------- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
 /* --------------- LAYOUT --------------- */
 
@@ -9,6 +11,7 @@
 body {
     padding: 1em 0 0 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* HEADER */
@@ -53,6 +56,7 @@ main {
     border-bottom: solid 5px #06b0dd;
     margin: 0 auto;
     overflow: hidden;
+    word-wrap: break-word;
 }
 
 .main-nav ul {
@@ -70,15 +74,16 @@ main {
     width: 100%;
     height: 100%;
     padding: 0.65em 0;
+    line-height: 100%;
 }
 
-#selected {
+.main-nav #selected {
     background-color: #06b0dd;
     color: white;
     cursor: default;
 }
 
-.main-nav li:hover, .main-nav li:hover a {
+.main-nav li:hover a {
     background-color: #61c9e5;
     color: black;
     cursor: pointer;
@@ -104,10 +109,15 @@ footer a, footer {
     color: white;
 }
 
+footer h2 {
+    color: #efa420;
+}
+
 /* --------------- HEADINGS --------------- */
 
 h1, h2 {
     color: #06b0dd;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -115,7 +125,7 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.8rem;
     margin-bottom: 1em;
 }
 
@@ -142,6 +152,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    line-height: 1.7em;
+}
+
 input {
     width: 100%;
     max-width: 500px;
@@ -153,12 +167,14 @@ figure {
     padding-bottom: 0.25em;
     border-radius: 16px;
     overflow: hidden;
-    background-color: #06b0dd;
+    background-color: #efa420;
+    max-width: 500px;
+    box-shadow: 0.5em 0.5em 1em rgba(128, 128, 128, 0.4);
 }
 
 figcaption {
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: center;
     padding: 0.5em;
 }
@@ -169,7 +185,7 @@ figcaption {
 }
 
 img {
-    width: 500px;
+    width: 100%;
 }
 
 
