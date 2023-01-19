@@ -176,23 +176,38 @@ main {
 }
 
 hr {
-    margin-bottom: 2em;
+    margin: 0 auto;
     border-width: 0 0 4px 0;
-    border-color: lightgrey;
+    border-color: rgba(6, 176, 221, 0.4);
+    width: 70%;
 }
 
 section {
-    margin-bottom: 4em;
+    margin: 4em 0;
 }
 
 #section--links {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2em;
 }
 
 #section--links figure {
-    flex-basis: 100%;
     margin: 0;
+}
+
+#section--links figure img {
+    height: 250px;
+    object-fit: cover;
+}
+
+#section--links figcaption {
+    padding: 1.5em;
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    /*max-width: 200px;*/
 }
 
 .read-more {
@@ -204,7 +219,8 @@ section {
 /* FOOTER */
 footer {
     width: 100%;
-    background-color: grey;
+    background-color: rgba(6, 176, 221, 0.2);
+    border-top: solid 5px rgba(6, 176, 221, 0.7);
     padding: 1em 0;
     line-height: 1.5rem;
     font-size: 0.9rem;
@@ -226,11 +242,7 @@ footer .container > div {
 }
 
 footer a, footer {
-    color: white;
-}
-
-footer h2 {
-    color: #efa420;
+    color: black;
 }
 
 /* --------------- HEADINGS --------------- */
@@ -312,7 +324,7 @@ button {
 figure {
     padding-bottom: 0.25em;
     overflow: hidden;
-    background-color: lightgrey;
+    background-color: rgba(211, 211, 211, 0.8);
     width: 40%;
     max-width: 500px;
     box-shadow: 0.5em 0.5em 1em rgba(128, 128, 128, 1);
