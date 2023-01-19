@@ -1,5 +1,5 @@
 /* --------------- FONT IMPORTS --------------- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&family=Roboto:wght@400;700&display=swap');
 
 /* --------------- LAYOUT --------------- */
 
@@ -175,6 +175,16 @@ main {
     min-height: 450px;
 }
 
+hr {
+    margin-bottom: 2em;
+    border-width: 0 0 4px 0;
+    border-color: lightgrey;
+}
+
+section {
+    margin-bottom: 4em;
+}
+
 #section--links {
     display: flex;
     gap: 2em;
@@ -183,6 +193,12 @@ main {
 #section--links figure {
     flex-basis: 100%;
     margin: 0;
+}
+
+.read-more {
+    color: #0189ab;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /* FOOTER */
@@ -234,11 +250,11 @@ h2 {
     margin-bottom: 0.25em;
 }
 
-.homepage-heading {
+.intro-heading {
     font-family: 'Pacifico', cursive;
     text-align: center;
     font-size: 4rem;
-    margin: 0.5em;
+    margin:  0.5em;
 }
 
 /* --------------- GENERAL --------------- */
@@ -295,16 +311,14 @@ button {
 
 figure {
     padding-bottom: 0.25em;
-    border-radius: 10px;
     overflow: hidden;
-    background-color: #06b0dd;
+    background-color: lightgrey;
     width: 40%;
     max-width: 500px;
-    box-shadow: 0.5em 0.5em 1em rgba(128, 128, 128, 0.4);
+    box-shadow: 0.5em 0.5em 1em rgba(128, 128, 128, 1);
 }
 
 figcaption {
-    color: white;
     font-size: 0.8rem;
     text-align: center;
     padding: 0.5em;
