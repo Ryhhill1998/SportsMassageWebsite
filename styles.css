@@ -1,5 +1,5 @@
 /* --------------- FONT IMPORTS --------------- */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&family=Roboto&display=swap');
 
 /* --------------- LAYOUT --------------- */
 
@@ -225,7 +225,10 @@ h2 {
 }
 
 .homepage-heading {
-
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0.5em;
 }
 
 /* --------------- GENERAL --------------- */
