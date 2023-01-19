@@ -65,7 +65,7 @@ header > div {
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 350px;
 }
 
 .header-extras {
@@ -268,8 +268,8 @@ input {
 }
 
 button {
-    border: solid 2px #efa420;
-    background-color: #efa420;
+    border: solid 2px #06b0dd;
+    background-color: #06b0dd;
     color: white;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -284,7 +284,7 @@ figure {
     padding-bottom: 0.25em;
     border-radius: 10px;
     overflow: hidden;
-    background-color: #efa420;
+    background-color: #06b0dd;
     width: 60%;
     max-width: 500px;
     box-shadow: 0.5em 0.5em 1em rgba(128, 128, 128, 0.4);
