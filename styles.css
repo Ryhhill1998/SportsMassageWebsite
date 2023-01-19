@@ -72,14 +72,6 @@ header > div {
     width: 100%;
 }
 
-/*.navigation {*/
-/*    width: 100%;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    margin-top: 0.5em;*/
-/*}*/
-
 .logo-container {
     display: flex;
     align-items: center;
@@ -196,12 +188,12 @@ footer div {
     display: flex;
 }
 
-footer .container-smaller {
+footer .container {
     flex-wrap: wrap;
     margin: 0 auto;
 }
 
-footer .container-smaller > div {
+footer .container > div {
     flex-direction: column;
     flex: 1 1 0;
     min-width: 250px;
@@ -230,6 +222,10 @@ h1 {
 h2 {
     font-size: 1.8rem;
     margin-bottom: 0.25em;
+}
+
+.homepage-heading {
+
 }
 
 /* --------------- GENERAL --------------- */
