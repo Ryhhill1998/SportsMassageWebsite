@@ -3,6 +3,14 @@ const rightArrow = document.querySelector(".arrow--right");
 const testimonials = document.querySelectorAll(".testimonial");
 let currentTestimonialIndex = 0;
 
+const changeSlideKeyDown = ({key}) => {
+    if (key === "ArrowRight") {
+        changeSlideRight();
+    } else if (key === "ArrowLeft") {
+        changeSlideLeft();
+    }
+}
+
 const changeSlide = (change) => {
     hideTestimonial(currentTestimonialIndex);
     change < 0 ? decrementSlideIndex() : incrementSlideIndex();
@@ -43,3 +51,5 @@ const hideTestimonial = (index) => {
 
 leftArrow.addEventListener("click", changeSlideLeft);
 rightArrow.addEventListener("click", changeSlideRight);
+
+document.addEventListener("keydown", changeSlideKeyDown);
