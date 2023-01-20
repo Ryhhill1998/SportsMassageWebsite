@@ -20,8 +20,10 @@ body {
 /* HEADER */
 header {
     padding-top: 1em;
-    background-color: rgba(6, 176, 221, 0.2);
-    border-bottom: solid 5px rgba(6, 176, 221, 0.7);
+    background-color: #d7f0f8;
+    border-bottom: solid 5px #5fc3e5;
+    /*position: sticky;*/
+    /*top: 0;*/
 }
 
 header > .container {
@@ -186,23 +188,27 @@ section {
     margin: 4em 0;
 }
 
-#section--links {
+#section--intro h2 {
+    text-align: left;
+}
+
+.cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
 }
 
-#section--links figure {
+.cards-container figure {
     margin: 0;
 }
 
-#section--links figure img {
+.cards-container figure img {
     height: 250px;
     object-fit: cover;
 }
 
-#section--links figcaption {
+.cards-container figcaption {
     padding: 1.5em;
     /*white-space: nowrap;*/
     /*overflow: hidden;*/
@@ -241,6 +247,11 @@ footer .container > div {
     min-width: 250px;
 }
 
+footer h2 {
+    text-align: left;
+    margin-bottom: 0.75em;
+}
+
 footer a, footer {
     color: black;
 }
@@ -259,7 +270,8 @@ h1 {
 
 h2 {
     font-size: 1.8rem;
-    margin-bottom: 0.25em;
+    margin-bottom: 1.5em;
+    text-align: center;
 }
 
 .intro-heading {
@@ -287,7 +299,7 @@ a {
 
 p {
     line-height: 1.7em;
-    margin-top: 1.5em;
+    margin: 0 0 1.5em;
 }
 
 .search-box {
