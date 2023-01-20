@@ -9,7 +9,7 @@
 }
 
 html {
-
+    scroll-behavior: smooth;
 }
 
 body {
@@ -289,7 +289,7 @@ footer {
     width: 100%;
     background-color: rgba(6, 176, 221, 0.2);
     border-top: solid 5px rgba(6, 176, 221, 0.7);
-    padding: 1em 0;
+    padding: 3em 0;
     line-height: 1.5rem;
     font-size: 0.9rem;
 }
