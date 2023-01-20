@@ -247,9 +247,16 @@ section {
     color: #c2c2c2;
 }
 
+.arrow:hover {
+    color: grey;
+    cursor: pointer;
+}
+
 .carousel div {
     display: grid;
     grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel div figure {
@@ -401,7 +408,7 @@ img {
 }
 
 .hidden {
-    display: none;
+    visibility: hidden;
 }
 
 /* --------------- MEDIA QUERIES --------------- */
