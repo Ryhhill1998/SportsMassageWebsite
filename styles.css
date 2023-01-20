@@ -257,13 +257,14 @@ section {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
+    max-height: fit-content;
 }
 
 .carousel div figure {
     grid-column-start: 1;
     grid-row-start: 1;
-    width: 70%;
-    margin: 0 auto;
+    width: 75%;
+    margin: 0 auto 2em;
 }
 
 .carousel figure p {
@@ -291,10 +292,11 @@ footer {
     border-top: solid 5px rgba(6, 176, 221, 0.7);
     padding: 3em 0;
     line-height: 1.5rem;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 footer .container {
+    color: black;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -305,11 +307,19 @@ footer .container > div {
     flex: 1 1 0;
 }
 
+footer li {
+    margin-bottom: 0.5em;
+}
+
 footer h2 {
     margin-bottom: 0.75em;
 }
 
-footer a, footer {
+footer a {
+    color: #0189ab;
+}
+
+footer a:hover {
     color: black;
 }
 
@@ -407,10 +417,6 @@ img {
 
 /* --------------- MEDIA QUERIES --------------- */
 @media (max-width: 750px) {
-    .main-nav {
-
-    }
-
     .main-nav li {
         display: none;
     }
@@ -436,13 +442,19 @@ img {
     .search-box {
         justify-content: center;
     }
-}
 
-@media (max-width: 600px) {
-    figure {
-        float: none;
-        margin: 0 auto;
+    .carousel div {
+        display: block;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .carousel div figure {
+        visibility: visible;
         width: 100%;
+        margin-bottom: 5em;
     }
 }
 
