@@ -237,8 +237,45 @@ section {
 }
 
 /* TESTIMONIALS */
-#section--testimonials figure {
+.carousel {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 4rem;
+    color: #c2c2c2;
+}
+
+.carousel div {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.carousel div figure {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.carousel figure p {
     text-align: center;
+    font-size: 1.5rem;
+    line-height: 2em;
+}
+
+.quotation-mark {
+    font-size: 2.5rem;
+    color: #0189ab;
+    font-family: 'Pacifico', cursive;
+}
+
+#section--testimonials figure figcaption {
+    text-align: right;
+    color: #0189ab;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /* FOOTER */
@@ -291,6 +328,7 @@ h2 {
     font-size: 1.8rem;
     margin-bottom: 1.5em;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .intro-heading {
