@@ -189,9 +189,11 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     gap: 2em;
+    margin: 0;
 }
 
 .cards-container figure {
+    min-width: 300px;
     margin: 0;
 }
 
@@ -433,8 +435,18 @@ img {
         text-align: center;
     }
 
-    .search-box {
-        justify-content: center;
+    #section--intro {
+        text-align: center;
+    }
+
+    #section--intro h2 {
+        text-align: center;
+    }
+
+    #section--intro figure {
+        float: none;
+        width: 100%;
+        margin: 0 auto 2em;
     }
 
     .carousel div {
