@@ -319,6 +319,27 @@ footer a:hover {
     font-size: 0.8rem;
 }
 
+/* New intro layout */
+.about {
+    display: flex;
+    background-color: rgba(215, 240, 248, 0.7);
+}
+
+.about .content {
+    margin-right: 2em;
+    padding: 0.5em 0 0.5em 2em;
+}
+
+.about > div {
+    width: 100%;
+}
+
+.intro-image {
+    background-image: url(massage.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
 /* --------------- HEADINGS --------------- */
 
 h1, h2 {
@@ -333,7 +354,7 @@ h1 {
 
 h2 {
     font-size: 1.8rem;
-    margin-bottom: 1.5em;
+    /*margin-bottom: 1.5em;*/
     text-align: center;
     text-transform: uppercase;
 }
@@ -436,14 +457,6 @@ img {
         text-align: center;
     }
 
-    #section--intro {
-        text-align: center;
-    }
-
-    #section--intro h2 {
-        text-align: center;
-    }
-
     #section--intro figure {
         float: none;
         width: 100%;
@@ -469,5 +482,18 @@ img {
         width: 100%;
         margin-bottom: 5em;
     }
-}
 
+    /* new intro layout*/
+    .about {
+        flex-direction: column;
+    }
+
+    .about .content {
+        margin: 0;
+        padding: 1em 2em;
+    }
+
+    .intro-image {
+        min-height: 350px;
+    }
+}
