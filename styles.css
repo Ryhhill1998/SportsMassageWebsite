@@ -37,33 +37,52 @@ header > div {
     text-align: right;
 }
 
-.sub-nav {
+nav {
     width: 70%;
     margin: 0 auto;
 }
 
-.sub-nav ul {
+nav > ul {
     display: flex;
     justify-content: center;
     margin: 0;
 }
 
-.sub-nav ul li {
+nav ul li {
     text-align: center;
     width: 100%;
 }
 
-.sub-nav a {
+nav a {
     color: black;
     display: inline-block;
     padding: 1em 0;
     width: 100%;
 }
 
-.sub-nav a:hover {
+nav a:hover {
     background-color: #61c9e5;
     color: white;
     cursor: pointer;
+}
+
+li.dropdown {
+    position: relative;
+}
+
+.services-dropdown {
+    position: absolute;
+    width: 250px;
+    margin-top: 5px;
+    border: solid 2px #5fc3e5;
+    border-top: none;
+    background-color: #d7f0f8;
+}
+
+.services-dropdown a {
+    padding: 0.5em;
+    text-align: left;
+    font-size: 0.9rem;
 }
 
 .logo {
