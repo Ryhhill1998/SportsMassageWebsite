@@ -1,9 +1,9 @@
 const servicesDropdown = document.getElementById("services-dropdown");
 const servicesButton = document.getElementById("services-button");
-const buttonAndDropdown = document.querySelector("li.dropdown");
+const services = document.querySelector(".services");
 
 const showServices = () => {
-    console.log(buttonAndDropdown);
+    console.log(services);
     servicesDropdown.classList.remove("hidden");
 }
 
@@ -12,4 +12,4 @@ const hideServices = () => {
 }
 
 servicesButton.addEventListener("mouseenter", showServices);
-buttonAndDropdown.addEventListener("mouseleave", hideServices);
+services.addEventListener("mouseleave", hideServices);
