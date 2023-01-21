@@ -1,3 +1,4 @@
+// --------------- SERVICES DROPDOWN --------------- //
 const servicesDropdown = document.getElementById("services-dropdown");
 const servicesButton = document.getElementById("services-button");
 const services = document.querySelector(".services");
@@ -13,3 +14,6 @@ const hideServices = () => {
 
 servicesButton.addEventListener("mouseenter", showServices);
 services.addEventListener("mouseleave", hideServices);
+
+// --------------- COLLAPSE NAVBAR DROPDOWN --------------- //
+const dropdownMenu = document.getElementById("dropdown-menu");
