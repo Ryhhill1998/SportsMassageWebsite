@@ -60,9 +60,10 @@ nav a {
     width: 100%;
 }
 
-nav a:hover {
-    background-color: #61c9e5;
-    color: white;
+nav > ul > li > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+    color: #0189ab;
     cursor: pointer;
 }
 
@@ -73,9 +74,8 @@ li.dropdown {
 #services-dropdown {
     position: absolute;
     width: 250px;
-    /*margin-top: 5px;*/
     border: solid 2px #5fc3e5;
-    border-top: solid 5px #5fc3e5;;
+    border-top: solid 5px #5fc3e5;
     background-color: #d7f0f8;
 }
 
@@ -83,6 +83,11 @@ li.dropdown {
     padding: 0.5em;
     text-align: left;
     font-size: 0.9rem;
+}
+
+#services-dropdown a:hover {
+    background-color: #61c9e5;
+    color: white;
 }
 
 .logo {
@@ -312,6 +317,17 @@ footer {
     padding: 3em 0;
     line-height: 1.5rem;
     font-size: 0.95rem;
+    text-align: center;
+}
+
+footer .logo {
+    max-width: 300px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
 }
 
 footer .container {
@@ -340,6 +356,10 @@ footer a {
 
 footer a:hover {
     color: black;
+}
+
+.copyright {
+    font-size: 0.8rem;
 }
 
 /* --------------- HEADINGS --------------- */
