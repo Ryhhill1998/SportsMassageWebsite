@@ -40,7 +40,6 @@ header > div {
 /* COLLAPSE NAV */
 .collapse-nav {
     position: relative;
-    margin: 0 auto;
 }
 
 /* MAIN NAV */
@@ -99,11 +98,11 @@ li.dropdown {
 
 /* DROPDOWN */
 #dropdown-menu {
-    background-color: grey;
-    color: white;
+    background-color: #d7f0f8;
+    border: solid 2px #5fc3e5;
+    border-top: solid 5px #5fc3e5;
     position: absolute;
     width: 100%;
-    border-radius: 0 0 10px 10px;
     text-align: center;
     overflow: hidden;
 }
@@ -115,19 +114,23 @@ li.dropdown {
 #dropdown-menu a {
     display: inline-block;
     width: 100%;
-    padding: 1em 0;
+    padding: 0.75em 0;
 }
 
 #dropdown-menu a:hover {
-    background-color: #61c9e5;
-    color: black;
+    background-color: #5fc3e5;
+    color: white;
     cursor: pointer;
 }
 
-#dropdown-selected {
-    background-color: #06b0dd;
+.dropdown-selected {
+    background-color: #5fc3e5;
     color: white;
     cursor: default;
+}
+
+.dropdown-selected a {
+    color: white;
 }
 
 .logo {
@@ -150,43 +153,6 @@ li.dropdown {
 
 .contact-info > li {
     margin-bottom: 0.75em;
-}
-
-/* MAIN NAV */
-.main-nav {
-    background-color: grey;
-    border-radius: 10px;
-    border-bottom: solid 5px #06b0dd;
-    overflow: hidden;
-}
-
-.main-nav ul {
-    justify-content: center;
-}
-
-.main-nav ul li {
-    width: 100%;
-    text-align: center;
-}
-
-.main-nav ul li a {
-    color: white;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    padding: 0.65em 0.75em;
-}
-
-#nav-selected {
-    background-color: #06b0dd;
-    color: white;
-    cursor: default;
-}
-
-.main-nav a:hover {
-    background-color: #61c9e5;
-    color: black;
-    cursor: pointer;
 }
 
 #hamburger {
@@ -402,7 +368,7 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 p {
