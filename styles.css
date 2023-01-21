@@ -157,10 +157,10 @@ main {
 
 hr {
     margin: 0 auto;
-    border-width: 0 0 10px 0;
+    border-width: 0 0 12px 0;
     border-color: rgba(6, 176, 221, 0.4);
     border-bottom-style: dotted;
-    width: 70%;
+    width: 60%;
 }
 
 section {
