@@ -70,7 +70,7 @@ li.dropdown {
     position: relative;
 }
 
-.services-dropdown {
+#services-dropdown {
     position: absolute;
     width: 250px;
     margin-top: 5px;
@@ -79,7 +79,7 @@ li.dropdown {
     background-color: #d7f0f8;
 }
 
-.services-dropdown a {
+#services-dropdown a {
     padding: 0.5em;
     text-align: left;
     font-size: 0.9rem;
