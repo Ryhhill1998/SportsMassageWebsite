@@ -73,9 +73,9 @@ li.dropdown {
 #services-dropdown {
     position: absolute;
     width: 250px;
-    margin-top: 5px;
+    /*margin-top: 5px;*/
     border: solid 2px #5fc3e5;
-    border-top: none;
+    border-top: solid 5px #5fc3e5;;
     background-color: #d7f0f8;
 }
 
