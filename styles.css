@@ -131,10 +131,6 @@ li.dropdown {
     max-width: 350px;
 }
 
-.header-extras {
-    width: 100%;
-}
-
 .logo-container {
     display: flex;
     align-items: center;
@@ -419,6 +415,15 @@ img {
         margin: 0;
     }
 
+    .logo-container {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .contact-info li:first-child, .contact-info li:nth-child(2) {
+        display: none;
+    }
+
     .main-nav {
         display: none;
     }
@@ -426,12 +431,6 @@ img {
     .collapsed {
         display: block;
         text-align: center;
-    }
-
-    header {
-        align-items: center;
-        flex-direction: column;
-        gap: 1em;
     }
 
     .search-box {
