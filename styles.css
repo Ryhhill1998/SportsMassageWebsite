@@ -157,8 +157,9 @@ main {
 
 hr {
     margin: 0 auto;
-    border-width: 0 0 4px 0;
+    border-width: 0 0 10px 0;
     border-color: rgba(6, 176, 221, 0.4);
+    border-bottom-style: dotted;
     width: 70%;
 }
 
@@ -249,7 +250,7 @@ section {
 
 .carousel figure p {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2em;
 }
 
@@ -444,6 +445,12 @@ img {
     }
 
     #section--intro figure {
+        float: none;
+        width: 100%;
+        margin: 0 auto 2em;
+    }
+
+    #section--links figure {
         float: none;
         width: 100%;
         margin: 0 auto 2em;

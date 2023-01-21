@@ -16,4 +16,15 @@ servicesButton.addEventListener("mouseenter", showServices);
 services.addEventListener("mouseleave", hideServices);
 
 // --------------- COLLAPSE NAVBAR DROPDOWN --------------- //
+const hamburgerButton = document.getElementById("hamburger");
 const dropdownMenu = document.getElementById("dropdown-menu");
+
+const toggleDropdownMenu = () => {
+    if (dropdownMenu.classList.contains("hidden")) {
+        dropdownMenu.classList.remove("hidden");
+    } else {
+        dropdownMenu.classList.add("hidden");
+    }
+}
+
+hamburgerButton.addEventListener("click", toggleDropdownMenu);
