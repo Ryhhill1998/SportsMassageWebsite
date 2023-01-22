@@ -7,151 +7,132 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>R&R Sports Massage & Reflexology</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <script defer src="navigation.js"></script>
 </head>
 <body>
-<header class="container">
-    <img class="logo" src="logo.jpeg" alt="logo">
+<header>
+    <div class="container">
 
-    <div class="header-extras">
-        <nav class="sub-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Testimonials</a></li>
-                <li><a href="">Contact</a></li>
+        <div class="logo-container">
+            <img class="logo" src="logo-with-text.png" alt="logo">
+            <ul class="contact-info">
+                <li>📞 07446 258 822</li>
+                <li>info@rrsportsmassage.co.uk</li>
+                <li>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search...">
+                        <button>Go</button>
+                    </div>
+                </li>
             </ul>
-        </nav>
-
-        <div class="search-box">
-            <input type="text" placeholder="Search...">
-            <button>Go</button>
         </div>
 
-        <ul class="contact-info">
-            <li>07446 258 822</li>
-            <li>info@rrsportsmassage.co.uk</li>
-        </ul>
+        <div class="collapse-nav">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="services">
+                        <a class="dropdown-button" id="services-button">
+                            Services
+                            <span class="dropdown-arrow">&#10094</span>
+                        </a>
+                        <div id="services-dropdown" class="hidden">
+                            <ul>
+                                <li><a class="dropdown-selected" href="sportsMassage.html">Sports Massage</a></li>
+                                <li><a href="reflexology.html">Reflexology</a></li>
+                                <li><a href="swedishMassage.html">Swedish Massage</a></li>
+                                <li><a href="indianHeadMassage.html">Indian Head Massage</a></li>
+                                <li><a href="stoneTherapy.html">LA Stone Therapy</a></li>
+                                <li><a href="pamperDays.html">Corporate Pamper Days</a></li>
+                                <li><a href="peerToPeer.html">Peer-to-Peer Massage</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="#section--testimonials">Testimonials</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav class="collapsed">
+                <ul>
+                    <li class="dropdown-button" id="hamburger">Menu <span class="dropdown-arrow">&#10094</span></li>
+                </ul>
+            </nav>
+            <div id="dropdown-menu" class="hidden">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="dropdown-selected" href="sportsMassage.html">Sports Massage</a></li>
+                    <li><a href="reflexology.html">Reflexology</a></li>
+                    <li><a href="swedishMassage.html">Swedish Massage</a></li>
+                    <li><a href="indianHeadMassage.html">Indian Head Massage</a></li>
+                    <li><a href="stoneTherapy.html">LA Stone Therapy</a></li>
+                    <li><a href="pamperDays.html">Corporate Pamper Days</a></li>
+                    <li><a href="peerToPeer.html">Peer-to-Peer Massage</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </header>
 
-<div class="container collapse-nav">
-    <nav class="main-nav">
-        <ul>
-            <li id="hamburger">Menu ▼</li>
-            <li><a id="nav-selected" href="">Sports Massage</a></li>
-            <li><a href="reflexology.html">Reflexology</a></li>
-            <li><a href="swedishMassage.html">Swedish Massage</a></li>
-            <li><a href="indianHeadMassage.html">Indian Head Massage</a></li>
-            <li><a href="stoneTherapy.html">LA Stone Therapy</a></li>
-            <li><a href="pamperDays.html">Corporate Pamper Days</a></li>
-            <li><a href="peerToPeer.html">Peer-to-Peer Massage</a></li>
-        </ul>
-    </nav>
-    <div id="dropdown" class="hidden">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a id="dropdown-selected" href="sportsMassage.html">Sports Massage</a></li>
-            <li><a href="reflexology.html">Reflexology</a></li>
-            <li><a href="swedishMassage.html">Swedish Massage</a></li>
-            <li><a href="indianHeadMassage.html">Indian Head Massage</a></li>
-            <li><a href="stoneTherapy.html">LA Stone Therapy</a></li>
-            <li><a href="pamperDays.html">Corporate Pamper Days</a></li>
-            <li><a href="peerToPeer.html">Peer-to-Peer Massage</a></li>
-            <li><a href="">FAQs</a></li>
-            <li><a href="">Testimonials</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </div>
-</div>
+<main class="container">
+    <section>
 
-<main class="container-smaller">
-    <section id="section--intro">
-        <h1>Sports Massage</h1>
+        <div class="about">
+            <div class="content">
+                <h2>Sports Massage</h2>
 
-        <figure>
-            <img src="sportsMassage.jpeg" alt="sports massage">
+                <p>
+                    Sports Massage combines advanced massage techniques, stretching exercises and aftercare advice for an
+                    intensive treatment which is ideal for both adults and juniors who want to maintain and improve their
+                    athletic performance.
+                </p>
 
-            <figcaption>
-                Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec.
-            </figcaption>
-        </figure>
+                <p>
+                    An invigorating massage which manages, manipulates and rehabilitates soft body tissue using additional
+                    deeper massage methods including Neuro-Muscular Technique and Trigger Point Therapy.
+                </p>
 
-        <p>
-            Sports Massage combines advanced massage techniques, stretching exercises and aftercare advice for an
-            intensive treatment which is ideal for both adults and juniors who want to maintain and improve their
-            athletic performance.
-        </p>
+                <p>
+                    Used to prevent and rehabilitate various problems, including sports related injuries and improving posture
+                    and relieving back pain by increasing flexibility and improving the suppleness of muscles and joints.
+                </p>
 
-        <p>
-            An invigorating massage which manages, manipulates and rehabilitates soft body tissue using additional
-            deeper massage methods including Neuro-Muscular Technique and Trigger Point Therapy.
-        </p>
+                <p>
+                    Benefits:
+                </p>
 
-        <p>
-            Used to prevent and rehabilitate various problems, including sports related injuries and improving posture
-            and relieving back pain by increasing flexibility and improving the suppleness of muscles and joints.
-        </p>
+                <ul class="bullet-list">
+                    <li>Alleviates stress and tension</li>
+                    <li>Restores mobility to injured tissue</li>
+                    <li>Aids muscle recovery</li>
+                    <li>Prevents injury</li>
+                    <li>Increases flexibility and elasticity</li>
+                    <li>Remodels scar tissue</li>
+                    <li>Boosts performance</li>
+                    <li>Improves circulation</li>
+                    <li>Reduces pain</li>
+                </ul>
+            </div>
 
-        <p>
-            Benefits:
-        </p>
+            <div class="intro-image" style="background-image: url(sportsMassage.jpeg)"></div>
+        </div>
 
-        <ul class="bullet-list">
-            <li>Alleviates stress and tension</li>
-            <li>Restores mobility to injured tissue</li>
-            <li>Aids muscle recovery</li>
-            <li>Prevents injury</li>
-            <li>Increases flexibility and elasticity</li>
-            <li>Remodels scar tissue</li>
-            <li>Boosts performance</li>
-            <li>Improves circulation</li>
-            <li>Reduces pain</li>
-        </ul>
     </section>
 </main>
 
 <footer>
-    <div class="container-smaller">
-        <div>
-            <h2>Site Map</h2>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Sports Massage</a></li>
-                <li><a href="">Reflexology</a></li>
-                <li><a href="">Swedish Massage</a></li>
-                <li><a href="">Indian Head Massage</a></li>
-                <li><a href="">LA Stone Therapy</a></li>
-                <li><a href="">Corporate Pamper Days</a></li>
-                <li><a href="">Peer-to-Peer Massage</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2>Useful Links</h2>
-            <ul>
-                <li><a href="">Contact</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Testimonials</a></li>
-                <li><a href="">Cookies</a></li>
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Terms of Use</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2>Contact</h2>
-            <ul>
-                <li>Rehabilitation and Recovery Sports Massage & Reflexology</li>
-                <li>Lambley Crescent</li>
-                <li>Seaton Delaval</li>
-                <li>Tyne and Wear</li>
-                <li>NE25 0FJ</li>
-                <li>07446 258 822</li>
-                <li>info@rrsportsmassage.co.uk</li>
-            </ul>
-        </div>
-    </div>
+    <img class="logo" src="logo-with-text.png" alt="">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Cookies</a></li>
+        <li><a href="">Privacy</a></li>
+    </ul>
+    <p class="copyright">© Design by Ryan Henzell-Hill</p>
 </footer>
 
 </body>
