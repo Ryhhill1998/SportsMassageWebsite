@@ -520,6 +520,10 @@ img {
         flex-direction: column;
     }
 
+    .about > div {
+        width: 100%;
+    }
+
     .about .content {
         margin: 0;
         padding: 1em 2em;
