@@ -177,6 +177,11 @@ hr {
     width: 60%;
 }
 
+main section:first-child h2 {
+    text-align: left;
+    margin-bottom: 1em;
+}
+
 section {
     margin: 6em 0;
 }
@@ -339,9 +344,15 @@ footer a:hover {
 }
 
 /* New intro layout */
+#section--intro .about {
+    margin: 0;
+}
+
 .about {
+    text-align: left;
     display: flex;
     background-color: rgba(215, 240, 248, 0.7);
+    margin-top: 6em;
 }
 
 .about .content {
@@ -354,7 +365,6 @@ footer a:hover {
 }
 
 .intro-image {
-    background-image: url(massage.jpeg);
     background-size: cover;
     background-position: center;
 }
