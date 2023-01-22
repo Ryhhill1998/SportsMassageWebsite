@@ -12,8 +12,20 @@ const hideServices = () => {
     servicesDropdown.classList.add("hidden");
 }
 
+const servicesIsHidden = () => servicesDropdown.classList.contains("hidden");
+
+const toggleServices = () => {
+    if (servicesIsHidden()) {
+        showServices();
+    } else {
+        hideServices();
+    }
+}
+
 servicesButton.addEventListener("mouseenter", showServices);
 services.addEventListener("mouseleave", hideServices);
+
+servicesButton.addEventListener("click", toggleServices);
 
 // --------------- COLLAPSE NAVBAR DROPDOWN --------------- //
 const hamburgerButton = document.getElementById("hamburger");

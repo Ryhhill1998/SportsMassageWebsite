@@ -39,6 +39,7 @@ header .container {
 /* MAIN .main-nav */
 .main-nav {
     width: 70%;
+    min-width: 650px;
     margin: 0 auto;
 }
 
@@ -48,15 +49,16 @@ header .container {
     margin: 0;
 }
 
-.main-nav ul li {
+.main-nav > ul > li {
     text-align: center;
     width: 100%;
+    padding: 0.5em 0.75em;
 }
 
 .main-nav a {
     color: black;
     display: inline-block;
-    padding: 1em 0;
+    padding: 0.5em 0;
     width: 100%;
 }
 
@@ -67,12 +69,20 @@ header .container {
     cursor: pointer;
 }
 
-li.dropdown {
-    position: relative;
+#services-button {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.dropdown-arrow {
+    display: inline-block;
+    margin-left: 0.5em;
+    transform: rotate(-90deg);
 }
 
 #services-dropdown {
     position: absolute;
+    margin-top: 0.5em;
     width: 250px;
     border: solid 2px #5fc3e5;
     border-top: solid 5px #5fc3e5;
