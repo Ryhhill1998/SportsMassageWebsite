@@ -228,7 +228,11 @@ section {
 }
 
 .cards-container figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 1.5em;
+    min-height: 250px;
     /*white-space: nowrap;*/
     /*overflow: hidden;*/
     /*text-overflow: ellipsis;*/
@@ -239,6 +243,11 @@ section {
     color: #0189ab;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.read-more:hover {
+    color: #06b0dd;
+    cursor: pointer;
 }
 
 /* TESTIMONIALS */
