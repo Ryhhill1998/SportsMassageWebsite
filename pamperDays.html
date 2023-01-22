@@ -7,152 +7,129 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>R&R Sports Massage & Reflexology</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <script defer src="navigation.js"></script>
 </head>
 <body>
-<header class="container">
-    <img class="logo" src="logo.jpeg" alt="logo">
+<header>
+    <div class="container">
 
-    <div class="header-extras">
-        <nav class="sub-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Testimonials</a></li>
-                <li><a href="">Contact</a></li>
+        <div class="logo-container">
+            <img class="logo" src="logo-with-text.png" alt="logo">
+            <ul class="contact-info">
+                <li>📞 07446 258 822</li>
+                <li>info@rrsportsmassage.co.uk</li>
+                <li>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search...">
+                        <button>Go</button>
+                    </div>
+                </li>
             </ul>
-        </nav>
-
-        <div class="search-box">
-            <input type="text" placeholder="Search...">
-            <button>Go</button>
         </div>
 
-        <ul class="contact-info">
-            <li>07446 258 822</li>
-            <li>info@rrsportsmassage.co.uk</li>
-        </ul>
+        <div class="collapse-nav">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="services">
+                        <a class="dropdown-button" id="services-button">
+                            Services
+                            <span class="dropdown-arrow">&#10094</span>
+                        </a>
+                        <div id="services-dropdown" class="hidden">
+                            <ul>
+                                <li><a href="sportsMassage.html">Sports Massage</a></li>
+                                <li><a href="reflexology.html">Reflexology</a></li>
+                                <li><a href="swedishMassage.html">Swedish Massage</a></li>
+                                <li><a href="indianHeadMassage.html">Indian Head Massage</a></li>
+                                <li><a href="stoneTherapy.html">LA Stone Therapy</a></li>
+                                <li><a class="dropdown-selected" href="pamperDays.html">
+                                    Corporate Pamper Days
+                                </a></li>
+                                <li><a href="peerToPeer.html">Peer-to-Peer Massage</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="#section--testimonials">Testimonials</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav class="collapsed">
+                <ul>
+                    <li class="dropdown-button" id="hamburger">Menu <span class="dropdown-arrow">&#10094</span></li>
+                </ul>
+            </nav>
+            <div id="dropdown-menu" class="hidden">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sportsMassage.html">Sports Massage</a></li>
+                    <li><a href="reflexology.html">Reflexology</a></li>
+                    <li><a href="swedishMassage.html">Swedish Massage</a></li>
+                    <li><a href="indianHeadMassage.html">Indian Head Massage</a></li>
+                    <li><a href="stoneTherapy.html">LA Stone Therapy</a></li>
+                    <li><a class="dropdown-selected" href="pamperDays.html">Corporate Pamper Days</a></li>
+                    <li><a href="peerToPeer.html">Peer-to-Peer Massage</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </header>
 
-<div class="container collapse-nav">
-    <nav class="main-nav">
-        <ul>
-            <li id="hamburger">Menu ▼</li>
-            <li><a href="sportsMassage.html">Sports Massage</a></li>
-            <li><a href="reflexology.html">Reflexology</a></li>
-            <li><a href="swedishMassage.html">Swedish Massage</a></li>
-            <li><a href="indianHeadMassage.html">Indian Head Massage</a></li>
-            <li><a href="stoneTherapy.html">LA Stone Therapy</a></li>
-            <li><a id="nav-selected" href="">Corporate Pamper Days</a></li>
-            <li><a href="peerToPeer.html">Peer-to-Peer Massage</a></li>
-        </ul>
-    </nav>
-    <div id="dropdown" class="hidden">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sportsMassage.html">Sports Massage</a></li>
-            <li><a href="reflexology.html">Reflexology</a></li>
-            <li><a href="swedishMassage.html">Swedish Massage</a></li>
-            <li><a href="indianHeadMassage.html">Indian Head Massage</a></li>
-            <li><a href="stoneTherapy.html">LA Stone Therapy</a></li>
-            <li><a id="dropdown-selected" href="pamperDays.html">Corporate Pamper Days</a></li>
-            <li><a href="peerToPeer.html">Peer-to-Peer Massage</a></li>
-            <li><a href="">FAQs</a></li>
-            <li><a href="">Testimonials</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </div>
-</div>
+<main class="container">
+    <section>
 
-<main class="container-smaller">
-    <section id="section--intro">
-        <h1>Corporate Pamper Days</h1>
+        <div class="about">
+            <div class="content">
+                <h2>Corporate Pamper Days</h2>
 
-        <figure>
-            <img src="massage.jpeg" alt="massage">
+                <p>
+                    Corporate Pamper Days are an excellent way to celebrate a milestone in your business or simply reward your
+                    team! We can come to your premises and provide a range of treatments for you and your staff.
+                </p>
 
-            <figcaption>
-                Typical session time: 30 mins
-            </figcaption>
-        </figure>
+                <p>
+                    Choose one of our treatments below to help your team relax, de-stress and re-energise:
+                </p>
 
-        <p>
-            Corporate Pamper Days are an excellent way to celebrate a milestone in your business or simply reward your
-            team! We can come to your premises and provide a range of treatments for you and your staff.
-        </p>
+                <ul class="bullet-list">
+                    <li>Sports Massage</li>
+                    <li>Reflexology</li>
+                    <li>Swedish Massage</li>
+                    <li>Indian Head Massage</li>
+                    <li>LA Stone Therapy</li>
+                </ul>
 
-        <p>
-            Choose one of our treatments below to help your team relax, de-stress and re-energise:
-        </p>
+                <p>
+                    It's a great way to say thank you to your team or simply indulge them. Either way, they'll return refreshed
+                    and revitalised.
+                </p>
 
-        <ul class="bullet-list">
-            <li>Sports Massage</li>
-            <li>Reflexology</li>
-            <li>Swedish Massage</li>
-            <li>Indian Head Massage</li>
-            <li>LA Stone Therapy</li>
-        </ul>
+                <p>
+                    A typical pamper day includes up to 6 hours of treatments, usually made up of 12 x 30 min sessions, but the
+                    package can be tailored to your specific requirements.
+                </p>
+            </div>
 
-        <p>
-            It's a great way to say thank you to your team or simply indulge them. Either way, they'll return refreshed
-            and revitalised.
-        </p>
+            <div class="intro-image" style="background-image: url(pamperDays.jpeg)"></div>
+        </div>
 
-        <p>
-            A typical pamper day includes up to 6 hours of treatments, usually made up of 12 x 30 min sessions, but the
-            package can be tailored to your specific requirements.
-        </p>
-
-        <p>
-            If you're looking for advice in finding the right treatment for you or simply require any other information,
-            give us a call on 07446 258 822 or drop us an email at info@rrsportsmassage.co.uk and let us know how we can
-            assist.
-        </p>
     </section>
 </main>
 
 <footer>
-    <div class="container-smaller">
-        <div>
-            <h2>Site Map</h2>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Sports Massage</a></li>
-                <li><a href="">Reflexology</a></li>
-                <li><a href="">Swedish Massage</a></li>
-                <li><a href="">Indian Head Massage</a></li>
-                <li><a href="">LA Stone Therapy</a></li>
-                <li><a href="">Corporate Pamper Days</a></li>
-                <li><a href="">Peer-to-Peer Massage</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2>Useful Links</h2>
-            <ul>
-                <li><a href="">Contact</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Testimonials</a></li>
-                <li><a href="">Cookies</a></li>
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Terms of Use</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2>Contact</h2>
-            <ul>
-                <li>Rehabilitation and Recovery Sports Massage & Reflexology</li>
-                <li>Lambley Crescent</li>
-                <li>Seaton Delaval</li>
-                <li>Tyne and Wear</li>
-                <li>NE25 0FJ</li>
-                <li>07446 258 822</li>
-                <li>info@rrsportsmassage.co.uk</li>
-            </ul>
-        </div>
-    </div>
+    <img class="logo" src="logo-with-text.png" alt="">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Cookies</a></li>
+        <li><a href="">Privacy</a></li>
+    </ul>
+    <p class="copyright">© Design by Ryan Henzell-Hill</p>
 </footer>
 
 </body>
