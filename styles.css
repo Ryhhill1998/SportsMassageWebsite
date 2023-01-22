@@ -314,6 +314,11 @@ footer .logo {
     max-width: 300px;
 }
 
+footer .icon {
+    width: 30px;
+    color: blue;
+}
+
 footer ul {
     display: flex;
     justify-content: center;
