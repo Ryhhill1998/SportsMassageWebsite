@@ -7,165 +7,129 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>R&R Sports Massage & Reflexology</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <script defer src="navigation.js"></script>
 </head>
 <body>
-<header class="container">
-    <img class="logo" src="logo.jpeg" alt="logo">
+<header>
+    <div class="container">
 
-    <div class="header-extras">
-        <nav class="sub-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Testimonials</a></li>
-                <li><a href="">Contact</a></li>
+        <div class="logo-container">
+            <img class="logo" src="logo-with-text.png" alt="logo">
+            <ul class="contact-info">
+                <li>📞 07446 258 822</li>
+                <li>info@rrsportsmassage.co.uk</li>
+                <li>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search...">
+                        <button>Go</button>
+                    </div>
+                </li>
             </ul>
-        </nav>
-
-        <div class="search-box">
-            <input type="text" placeholder="Search...">
-            <button>Go</button>
         </div>
 
-        <ul class="contact-info">
-            <li>07446 258 822</li>
-            <li>info@rrsportsmassage.co.uk</li>
-        </ul>
+        <div class="collapse-nav">
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="services">
+                        <a class="dropdown-button" id="services-button">
+                            Services
+                            <span class="dropdown-arrow">&#10094</span>
+                        </a>
+                        <div id="services-dropdown" class="hidden">
+                            <ul>
+                                <li><a href="sportsMassage.html">Sports Massage</a></li>
+                                <li><a href="reflexology.html">Reflexology</a></li>
+                                <li><a href="swedishMassage.html">Swedish Massage</a></li>
+                                <li><a href="indianHeadMassage.html">Indian Head Massage</a></li>
+                                <li><a href="stoneTherapy.html">LA Stone Therapy</a></li>
+                                <li><a href="pamperDays.html">Corporate Pamper Days</a></li>
+                                <li><a class="dropdown-selected" href="peerToPeer.html">
+                                    Peer-to-Peer Massage
+                                </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="#section--testimonials">Testimonials</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <nav class="collapsed">
+                <ul>
+                    <li class="dropdown-button" id="hamburger">Menu <span class="dropdown-arrow">&#10094</span></li>
+                </ul>
+            </nav>
+            <div id="dropdown-menu" class="hidden">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sportsMassage.html">Sports Massage</a></li>
+                    <li><a href="reflexology.html">Reflexology</a></li>
+                    <li><a href="swedishMassage.html">Swedish Massage</a></li>
+                    <li><a href="indianHeadMassage.html">Indian Head Massage</a></li>
+                    <li><a href="stoneTherapy.html">LA Stone Therapy</a></li>
+                    <li><a href="pamperDays.html">Corporate Pamper Days</a></li>
+                    <li><a class="dropdown-selected" href="peerToPeer.html">Peer-to-Peer Massage</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </header>
 
-<div class="container collapse-nav">
-    <nav class="main-nav">
-        <ul>
-            <li id="hamburger">Menu ▼</li>
-            <li><a href="sportsMassage.html">Sports Massage</a></li>
-            <li><a href="reflexology.html">Reflexology</a></li>
-            <li><a href="swedishMassage.html">Swedish Massage</a></li>
-            <li><a href="indianHeadMassage.html">Indian Head Massage</a></li>
-            <li><a href="stoneTherapy.html">LA Stone Therapy</a></li>
-            <li><a href="pamperDays.html">Corporate Pamper Days</a></li>
-            <li><a id="nav-selected" href="">Peer-to-Peer Massage</a></li>
-        </ul>
-    </nav>
-    <div id="dropdown" class="hidden">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sportsMassage.html">Sports Massage</a></li>
-            <li><a href="reflexology.html">Reflexology</a></li>
-            <li><a href="swedishMassage.html">Swedish Massage</a></li>
-            <li><a href="indianHeadMassage.html">Indian Head Massage</a></li>
-            <li><a href="stoneTherapy.html">LA Stone Therapy</a></li>
-            <li><a href="pamperDays.html">Corporate Pamper Days</a></li>
-            <li><a id="dropdown-selected" href="peerToPeer.html">Peer-to-Peer Massage</a></li>
-            <li><a href="">FAQs</a></li>
-            <li><a href="">Testimonials</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </div>
-</div>
+<main class="container">
+    <section>
 
-<main class="container-smaller">
-    <section id="section--intro">
-        <h1>Peer-to-Peer Massage</h1>
+        <div class="about">
+            <div class="content">
+                <h2>Peer-to-Peer Massages</h2>
 
-        <figure>
-            <img src="massage.jpeg" alt="massage">
+                <p>
+                    Corporate Pamper Days are an excellent way to celebrate a milestone in your business or simply reward your
+                    team! We can come to your premises and provide a range of treatments for you and your staff.
+                </p>
 
-            <figcaption>
-                Improves relationships, social skills and cooperation amongst children.
-                Reduces stress levels, aggression and bullying.
-            </figcaption>
-        </figure>
+                <p>
+                    Choose one of our treatments below to help your team relax, de-stress and re-energise:
+                </p>
 
-        <p>
-            Our Peer-to-Peer Massage programme is aimed specifically at children aged 4-13 years.
-        </p>
+                <ul class="bullet-list">
+                    <li>Sports Massage</li>
+                    <li>Reflexology</li>
+                    <li>Swedish Massage</li>
+                    <li>Indian Head Massage</li>
+                    <li>LA Stone Therapy</li>
+                </ul>
 
-        <p>
-            The format is simple and well-structured; it has been developed as an inclusive whole school approach.
-        </p>
+                <p>
+                    It's a great way to say thank you to your team or simply indulge them. Either way, they'll return refreshed
+                    and revitalised.
+                </p>
 
-        <p>
-            The clothed, peer massage routines encourages positive relationships through massage which is given and
-            received with the child's permission. The children perform the back, neck and shoulder massages on each
-            other for 10-15 minutes each day.
-        </p>
+                <p>
+                    A typical pamper day includes up to 6 hours of treatments, usually made up of 12 x 30 min sessions, but the
+                    package can be tailored to your specific requirements.
+                </p>
+            </div>
 
-        <p>
-            The massage routine is taught in two parts, so the class can practise the techniques in between sessions and
-            we can check that the techniques are being performed correctly.
-        </p>
+            <div class="intro-image" style="background-image: url(massage.jpeg)"></div>
+        </div>
 
-        <p>
-            In Reception, Year 1 and Year 2, the routine uses the story of The Gruffalo to help the children better
-            engage with the techniques and have fun along the way.
-        </p>
-
-        <p>
-            Some of the benefits are described below:
-        </p>
-
-        <ul class="bullet-list">
-            <li>Improves relationships, social skills and cooperation amongst children as they work in pairs or groups,
-                encouraging them to learn from each other
-            </li>
-            <li>Teaches children to know the difference between positive, healthy touch and negative, inappropriate
-                behaviour
-            </li>
-            <li>Encourages children to make choices</li>
-            <li>Reduces stress, aggression and bullying</li>
-            <li>Teaches respect and reinforces inclusion</li>
-            <li>Helps improve self-esteem</li>
-            <li>Provides kinaesthetic and visual approach to learning</li>
-            <li>Improves concentration and helps make the classroom a calmer, conducive working environment</li>
-            <li>Links to curriculum areas such as Every Child Matters, PHSCE, SEAL, SEN, Learning and behaviour support</li>
-            <li>Embraces diversity</li>
-        </ul>
     </section>
 </main>
 
 <footer>
-    <div class="container-smaller">
-        <div>
-            <h2>Site Map</h2>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Sports Massage</a></li>
-                <li><a href="">Reflexology</a></li>
-                <li><a href="">Swedish Massage</a></li>
-                <li><a href="">Indian Head Massage</a></li>
-                <li><a href="">LA Stone Therapy</a></li>
-                <li><a href="">Corporate Pamper Days</a></li>
-                <li><a href="">Peer-to-Peer Massage</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2>Useful Links</h2>
-            <ul>
-                <li><a href="">Contact</a></li>
-                <li><a href="">FAQs</a></li>
-                <li><a href="">Testimonials</a></li>
-                <li><a href="">Cookies</a></li>
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Terms of Use</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h2>Contact</h2>
-            <ul>
-                <li>Rehabilitation and Recovery Sports Massage & Reflexology</li>
-                <li>Lambley Crescent</li>
-                <li>Seaton Delaval</li>
-                <li>Tyne and Wear</li>
-                <li>NE25 0FJ</li>
-                <li>07446 258 822</li>
-                <li>info@rrsportsmassage.co.uk</li>
-            </ul>
-        </div>
-    </div>
+    <img class="logo" src="logo-with-text.png" alt="">
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Cookies</a></li>
+        <li><a href="">Privacy</a></li>
+    </ul>
+    <p class="copyright">© Design by Ryan Henzell-Hill</p>
 </footer>
 
 </body>
