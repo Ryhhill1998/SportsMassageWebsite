@@ -25,11 +25,9 @@ const searchResultLinks = {
 }
 
 const createSearchResult = (result) => {
-    console.log(result);
-
     const html = `
         <li>
-            <a class="search-result" href=${searchResultLinks[result]}>
+            <a class="result search-result" href=${searchResultLinks[result]}>
                 ${result}
             </a>
         </li>
@@ -42,7 +40,24 @@ const clearResults = () => searchResultsContainer.innerHTML = "";
 
 const displayResults = (results) => {
     clearResults();
-    results.forEach(result => createSearchResult(result));
+
+    if (!results.length) {
+        showNoResultsFound();
+    } else {
+        results.forEach(result => createSearchResult(result));
+    }
+}
+
+const showNoResultsFound = () => {
+    const html = `
+        <li>
+            <a class="result">
+                No results found
+            </a>
+        </li>
+    `;
+
+    searchResultsContainer.insertAdjacentHTML("beforeend", html);
 }
 
 const findSearchResults = (query) => {
@@ -55,9 +70,6 @@ const processSearch = () => {
     if (searchQuery.trim() === "") return;
 
     const results = findSearchResults(searchQuery);
-
-    if (!results.length) return;
-
     displayResults(results);
 }
 
@@ -69,3 +81,4 @@ const hideSearchResults = ({target}) => {
 
 searchButton.addEventListener("click", processSearch);
 document.addEventListener("click", hideSearchResults);
+searchField.addEventListener("search", clearResults);
