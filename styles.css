@@ -169,7 +169,7 @@ main {
     min-height: 450px;
 }
 
-hr {
+.section-separator {
     margin: 4em auto;
     border-width: 0 0 12px 0;
     border-color: rgba(6, 176, 221, 0.4);
@@ -380,6 +380,39 @@ footer a:hover {
 .intro-image {
     background-size: cover;
     background-position: center;
+}
+
+/* SEARCH RESULTS */
+.search-container {
+    position: relative;
+}
+
+.search-results-dropdown {
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    text-align: left;
+    font-size: 0.8rem;
+    width: 89%;
+    min-width: 280px;
+    margin-left: 0.25em;
+}
+
+.search-result {
+    border: solid 1px lightgrey;
+    border-top: none;
+    display: inline-block;
+    width: 100%;
+    padding: 0.5em;
+}
+
+.search-result:hover {
+    background-color: #61c9e5;
+    color: white;
+}
+
+.search-results-dropdown li:first-child > .search-result {
+    border-top: solid 1px lightgrey;
 }
 
 /* --------------- HEADINGS --------------- */
