@@ -8,6 +8,7 @@
     <title>R&R Sports Massage & Reflexology</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="navigation.js"></script>
+    <script defer src="searchBar.js"></script>
 </head>
 <body>
 <header>
@@ -18,11 +19,12 @@
             <ul class="contact-info">
                 <li>📞 07446 258 822</li>
                 <li>info@rrsportsmassage.co.uk</li>
-                <li>
+                <li class="search-container">
                     <div class="search-box">
-                        <input type="text" placeholder="Search...">
-                        <button>Go</button>
+                        <input id="search-field" type="search" placeholder="Search...">
+                        <button id="search-button">Go</button>
                     </div>
+                    <ul id="search-results-container" class="search-results-dropdown"></ul>
                 </li>
             </ul>
         </div>
