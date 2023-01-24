@@ -404,6 +404,7 @@ footer a:hover {
     display: inline-block;
     width: 100%;
     padding: 0.5em;
+    text-transform: capitalize;
 }
 
 .search-result:hover {
