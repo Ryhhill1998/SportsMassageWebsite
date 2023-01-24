@@ -25,6 +25,8 @@ const searchResultLinks = {
 }
 
 const createSearchResult = (result) => {
+    console.log(result);
+
     const html = `
         <li>
             <a class="search-result" href=${searchResultLinks[result]}>
@@ -36,8 +38,10 @@ const createSearchResult = (result) => {
     searchResultsContainer.insertAdjacentHTML("beforeend", html);
 }
 
+const clearResults = () => searchResultsContainer.innerHTML = "";
+
 const displayResults = (results) => {
-    searchResultsContainer.innerHTML = "";
+    clearResults();
     results.forEach(result => createSearchResult(result));
 }
 
@@ -47,18 +51,21 @@ const findSearchResults = (query) => {
 
 const processSearch = () => {
     const searchQuery = searchField.value.toLowerCase();
-    console.log(searchQuery);
 
     if (searchQuery.trim() === "") return;
-    console.log(searchQuery)
 
     const results = findSearchResults(searchQuery);
-
-    console.log(results);
 
     if (!results.length) return;
 
     displayResults(results);
 }
 
+const hideSearchResults = ({target}) => {
+    if (!target.closest(".search-container")) {
+        clearResults();
+    }
+}
+
 searchButton.addEventListener("click", processSearch);
+document.addEventListener("click", hideSearchResults);

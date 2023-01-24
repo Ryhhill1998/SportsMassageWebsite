@@ -471,6 +471,7 @@ p {
 }
 
 input {
+    font-size: 0.8rem;
     width: 90%;
     min-width: 300px;
     padding: 0.25em 0.25em 0.25em 0.5em;
@@ -522,7 +523,7 @@ img {
         gap: 1em;
     }
 
-    .contact-info li:first-child, .contact-info li:nth-child(2) {
+    .contact-info > li:first-child, .contact-info > li:nth-child(2) {
         display: none;
     }
 
