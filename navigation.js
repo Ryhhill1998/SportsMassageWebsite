@@ -4,7 +4,6 @@ const servicesButton = document.getElementById("services-button");
 const services = document.querySelector(".services");
 
 const showServices = () => {
-    console.log(services);
     servicesDropdown.classList.remove("hidden");
 }
 
