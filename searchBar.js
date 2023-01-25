@@ -11,6 +11,7 @@ const possibleSearches = [
     "la stone therapy",
     "corporate pamper days",
     "peer-to-peer massages",
+    "testimonials"
 ];
 
 const searchResultLinks = {
@@ -22,6 +23,7 @@ const searchResultLinks = {
     "la stone therapy": "stoneTherapy.html",
     "corporate pamper days": "pamperDays.html",
     "peer-to-peer massages": "peerToPeer.html",
+    "testimonials": "index.html#section--testimonials"
 }
 
 const createSearchResult = (result) => {
