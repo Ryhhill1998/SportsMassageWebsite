@@ -1,8 +1,11 @@
 const overlay = document.querySelector(".overlay");
-const contactButton = document.getElementById("contact-button");
+const contactButtons = document.querySelectorAll(".contact-button");
 const contactForm = document.querySelector(".contact-form");
 
 const showContactForm = () => {
+    if (!dropdownMenu.classList.contains("hidden")) {
+        dropdownMenu.classList.add("hidden");
+    }
     contactForm.style.display = "block";
     overlay.style.display = "block";
 }
@@ -12,5 +15,6 @@ const hideContactForm = ({target}) => {
     overlay.style.display = "none";
 }
 
-contactButton.addEventListener("click", showContactForm);
+contactButtons.forEach(button => button.addEventListener("click", showContactForm));
+
 overlay.addEventListener("click", hideContactForm);
