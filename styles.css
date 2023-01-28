@@ -416,6 +416,19 @@ footer a:hover {
     border-top: solid 1px lightgrey;
 }
 
+/* CONTACT FORM */
+.contact-form {
+    border: solid 2px black;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* --------------- HEADINGS --------------- */
 
 h1, h2 {
