@@ -10,8 +10,11 @@
     <script defer src="navigation.js"></script>
     <script defer src="testimonials.js"></script>
     <script defer src="searchBar.js"></script>
+    <script defer src="contactForm.js"></script>
 </head>
 <body>
+
+<div class="overlay"></div>
 
 <div class="contact-form">
     <form>
@@ -43,7 +46,7 @@
     </form>
 </div>
 
-<div class="non-pop-up">
+<div id="non-pop-up">
     <header>
         <div class="container">
 
@@ -85,7 +88,7 @@
                         </li>
                         <li><a href="">FAQs</a></li>
                         <li><a href="#section--testimonials">Testimonials</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a id="contact-button">Contact</a></li>
                     </ul>
                 </nav>
 
