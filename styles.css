@@ -558,6 +558,11 @@ form .submit-button:hover {
     display: none;
 }
 
+/* FONT AWESOME ICONS */
+.fas {
+    color: #0189ab;
+}
+
 /* --------------- HEADINGS --------------- */
 
 h1, h2 {
