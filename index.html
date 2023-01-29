@@ -26,25 +26,25 @@
         <div>
             <label>
                 Name
-                <input type="text" name="name">
+                <input type="text" name="name" required>
             </label>
 
             <label>
                 Email
-                <input type="email" name="email">
+                <input type="email" name="email" required>
             </label>
 
             <label for="request-type">
                 Contact Reason
-                <select id="request-type" name="reason">
-                    <option disabled selected>Please select</option>
+                <select id="request-type" name="reason" required>
+                    <option value="">Please select</option>
                     <option value="Booking">Booking</option>
                     <option value="Query">Query</option>
                 </select>
             </label>
         </div>
 
-        <textarea placeholder="Type your message here" name="message" rows="5"></textarea>
+        <textarea placeholder="Type your message here" name="message" rows="5" required></textarea>
         <button class="submit-button" type="submit">Send</button>
     </>
 </div>
