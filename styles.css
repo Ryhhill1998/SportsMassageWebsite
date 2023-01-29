@@ -31,12 +31,12 @@ header .container {
     text-align: right;
 }
 
-/* COLLAPSE .main-nav */
+/* COLLAPSE NAV */
 .collapse-nav {
     position: relative;
 }
 
-/* MAIN .main-nav */
+/* MAIN NAV */
 .main-nav {
     width: 70%;
     min-width: 650px;
@@ -592,6 +592,7 @@ li {
 a {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 p {
