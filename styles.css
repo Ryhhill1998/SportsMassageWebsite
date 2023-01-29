@@ -497,6 +497,10 @@ form .close-button {
     line-height: 1.3rem;
 }
 
+form .close-button:hover {
+    color: #5fc3e5;
+}
+
 label {
     display: flex;
     flex-direction: column;
@@ -523,16 +527,21 @@ textarea {
 
 form .submit-button {
     max-width: 120px;
-    font-size: 1rem;
-    font-weight: bolder;
-    color: white;
     width: 50%;
     margin: 0 auto;
     border-radius: 10px;
     border: none;
-    background-color: #5fc3e5;
     padding: 0.5em;
+    color: #5fc3e5;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: bolder;
     text-transform: uppercase;
+}
+
+form .submit-button:hover {
+    color: white;
+    background-color: #5fc3e5;
 }
 
 .overlay {
