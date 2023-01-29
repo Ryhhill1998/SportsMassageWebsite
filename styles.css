@@ -474,11 +474,27 @@ form {
     height: 100%;
 }
 
+form > div:first-child {
+    position: relative;
+}
+
 form h3 {
     color: #06b0dd;
     text-transform: uppercase;
     text-align: center;
     margin-top: 0;
+}
+
+form .close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    border: none;
+    color: #06b0dd;
+    font-size: 2.5rem;
+    padding: 0;
+    line-height: 1.3rem;
 }
 
 label {
@@ -505,7 +521,7 @@ textarea {
     resize: none;
 }
 
-form button {
+form .submit-button {
     max-width: 120px;
     font-size: 1rem;
     font-weight: bolder;
@@ -572,6 +588,10 @@ a {
 p {
     line-height: 1.7em;
     margin: 0 0 1.5em;
+}
+
+button {
+    cursor: pointer;
 }
 
 figcaption {

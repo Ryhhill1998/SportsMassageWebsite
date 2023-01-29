@@ -1,6 +1,7 @@
 const overlay = document.querySelector(".overlay");
 const contactButtons = document.querySelectorAll(".contact-button");
 const contactForm = document.querySelector(".contact-form");
+const closeFormButton = document.getElementById("close-form-button");
 
 const showContactForm = () => {
     if (!dropdownMenu.classList.contains("hidden")) {
@@ -18,3 +19,4 @@ const hideContactForm = ({target}) => {
 contactButtons.forEach(button => button.addEventListener("click", showContactForm));
 
 overlay.addEventListener("click", hideContactForm);
+closeFormButton.addEventListener("click", hideContactForm);
