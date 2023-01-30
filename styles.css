@@ -630,7 +630,7 @@ img {
     transition: 2s all;
 }
 
-img:hover {
+figure img:hover {
     transform: scale(1.1);
 }
 

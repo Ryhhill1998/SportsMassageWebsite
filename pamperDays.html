@@ -6,19 +6,60 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>R&R Sports Massage & Reflexology</title>
+
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
     <script defer src="navigation.js"></script>
     <script defer src="searchBar.js"></script>
+    <script defer src="contactForm.js"></script>
 </head>
 <body>
+
+<div class="overlay"></div>
+
+<div class="contact-form">
+    <form action="https://formsubmit.co/rrsportsmassage@outlook.com" method="POST">
+        <div>
+            <h3>Contact Us</h3>
+            <button id="close-form-button" class="close-button">&#215</button>
+        </div>
+
+        <div>
+            <label>
+                Name
+                <input type="text" name="name" required>
+            </label>
+
+            <label>
+                Email
+                <input type="email" name="email" required>
+            </label>
+
+            <label for="request-type">
+                Reason
+                <select id="request-type" name="reason" required>
+                    <option value="">Please select</option>
+                    <option value="Booking">Booking</option>
+                    <option value="Query">Query</option>
+                </select>
+            </label>
+        </div>
+
+        <textarea placeholder="Type your message here" name="message" rows="5" required></textarea>
+        <button class="submit-button" type="submit">Send</button>
+    </form>
+</div>
+
 <header>
     <div class="container">
 
         <div class="logo-container">
             <img class="logo" src="logo-with-text.png" alt="logo">
             <ul class="contact-info">
-                <li>📞 07446 258 822</li>
-                <li>info@rrsportsmassage.co.uk</li>
+                <li><i class="fas fa-phone-alt"></i> 07446 258 822</li>
+                <li><i class="fas fa-envelope"></i> rrsportsmassage@outlook.com</li>
                 <li class="search-container">
                     <div class="search-box">
                         <input id="search-field" type="search" placeholder="Search...">
@@ -45,16 +86,14 @@
                                 <li><a href="swedishMassage.html">Swedish Massage</a></li>
                                 <li><a href="indianHeadMassage.html">Indian Head Massage</a></li>
                                 <li><a href="stoneTherapy.html">LA Stone Therapy</a></li>
-                                <li><a class="dropdown-selected" href="pamperDays.html">
-                                    Corporate Pamper Days
-                                </a></li>
+                                <li><a class="dropdown-selected" href="pamperDays.html">Corporate Pamper Days</a></li>
                                 <li><a href="peerToPeer.html">Peer-to-Peer Massage</a></li>
                             </ul>
                         </div>
                     </li>
                     <li><a href="">FAQs</a></li>
-                    <li><a href="#section--testimonials">Testimonials</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="index.html#section--testimonials">Testimonials</a></li>
+                    <li><a href="#top" class="contact-button">Contact</a></li>
                 </ul>
             </nav>
 
@@ -74,8 +113,8 @@
                     <li><a class="dropdown-selected" href="pamperDays.html">Corporate Pamper Days</a></li>
                     <li><a href="peerToPeer.html">Peer-to-Peer Massage</a></li>
                     <li><a href="">FAQs</a></li>
-                    <li><a href="">Testimonials</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="index.html#section--testimonials">Testimonials</a></li>
+                    <li><a href="#top" class="contact-button">Contact</a></li>
                 </ul>
             </div>
         </div>
