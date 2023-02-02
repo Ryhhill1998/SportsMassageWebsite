@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>R&R Sports Massage & Reflexology</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <script defer src="navigation.js"></script>
+  <script defer src="testimonials.js"></script>
+  <script defer src="searchBar.js"></script>
+  <script defer src="contactForm.js"></script>
+</head>
+<body>
+
+<div class="overlay"></div>
+
+<div class="contact-form">
+  <form action="https://formsubmit.co/rrsportsmassage@outlook.com" method="POST">
+    <div>
+      <h3>Contact Us</h3>
+      <button id="close-form-button" class="close-button">&#215</button>
+    </div>
+
+    <div>
+      <label>
+        Name
+        <input type="text" name="name" required>
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+
+      <label for="request-type">
+        Reason
+        <select id="request-type" name="reason" required>
+          <option value="">Please select</option>
+          <option value="Booking">Booking</option>
+          <option value="Query">Query</option>
+        </select>
+      </label>
+    </div>
+
+    <textarea placeholder="Type your message here" name="message" rows="5" required></textarea>
+    <button class="submit-button" type="submit">Send</button>
+  </form>
+</div>
+
+<header>
+  <div class="container">
+
+    <div class="logo-container">
+      <img class="logo" src="logo-with-text.png" alt="logo">
+      <ul class="contact-info">
+        <li><i class="fas fa-phone-alt"></i> 07446 258 822</li>
+        <li><i class="fas fa-envelope"></i> rrsportsmassage@outlook.com</li>
+        <li class="search-container">
+          <div class="search-box">
+            <input id="search-field" type="search" placeholder="Search...">
+            <button id="search-button">Go</button>
+          </div>
+          <ul id="search-results-container" class="search-results-dropdown"></ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="collapse-nav">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li class="services">
+            <a class="dropdown-button" id="services-button">
+              Services
+              <span class="dropdown-arrow">&#10094</span>
+            </a>
+            <div id="services-dropdown" class="hidden">
+              <ul>
+                <li><a href="sportsMassage.html">Sports Massage</a></li>
+                <li><a href="reflexology.html">Reflexology</a></li>
+                <li><a href="swedishMassage.html">Swedish Massage</a></li>
+                <li><a href="indianHeadMassage.html">Indian Head Massage</a></li>
+                <li><a href="stoneTherapy.html">LA Stone Therapy</a></li>
+                <li><a href="pamperDays.html">Corporate Pamper Days</a></li>
+                <li><a href="peerToPeer.html">Peer-to-Peer Massage</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="">FAQs</a></li>
+          <li><a href="#section--testimonials">Testimonials</a></li>
+          <li><a href="#top" class="contact-button">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="collapsed">
+        <ul>
+          <li class="dropdown-button" id="hamburger">Menu <span class="dropdown-arrow">&#10094</span></li>
+        </ul>
+      </nav>
+      <div id="dropdown-menu" class="hidden">
+        <ul>
+          <li><a class="dropdown-selected" href="index.html">Home</a></li>
+          <li><a href="sportsMassage.html">Sports Massage</a></li>
+          <li><a href="reflexology.html">Reflexology</a></li>
+          <li><a href="swedishMassage.html">Swedish Massage</a></li>
+          <li><a href="indianHeadMassage.html">Indian Head Massage</a></li>
+          <li><a href="stoneTherapy.html">LA Stone Therapy</a></li>
+          <li><a href="pamperDays.html">Corporate Pamper Days</a></li>
+          <li><a href="peerToPeer.html">Peer-to-Peer Massage</a></li>
+          <li><a href="">FAQs</a></li>
+          <li><a href="#section--testimonials">Testimonials</a></li>
+          <li><a href="#top" class="contact-button">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <h1 class="intro-heading">Welcome!</h1>
+
+  <section id="section--intro">
+
+    <div class="about">
+      <div class="content">
+        <h2>About Us</h2>
+
+        <p>
+          Whether you’re looking for support recovering from an injury, some respite from a niggling pain or
+          simply
+          want to unwind and de-stress, R&R Sports Massage & Reflexology offers a range of treatments that can
+          help
+          including Sports Massage, Reflexology, Swedish Massage and LA Stone Therapy.
+        </p>
+
+        <p>
+          Our clients typically fall into one of the following categories:
+        </p>
+
+        <p>
+          Those looking for support recovering from a soft tissue injury such as a sprain or pulled muscle...
+        </p>
+
+        <p class="read-more">
+          Read more
+        </p>
+      </div>
+
+      <div class="intro-image" style="background-image: url(massage.jpeg)"></div>
+    </div>
+
+  </section>
+
+  <hr class="section-separator">
+
+  <section id="section--links">
+    <h2>Our Services</h2>
+
+    <div class="cards-container">
+      <figure>
+        <div>
+          <img src="sportsMassage.jpeg" alt="massage">
+        </div>
+
+        <figcaption>
+          <h3>Sports Massage</h3>
+          <p>
+            Sports Massage combines advanced massage techniques, stretching exercises and aftercare advice
+            for
+            an
+            intensive treatment which is ideal for both adults and juniors who want to maintain and improve
+            their
+            athletic performance.
+          </p>
+          <a href="sportsMassage.html" class="read-more">
+            Read more
+          </a>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div>
+          <img src="reflexology.jpeg" alt="massage">
+        </div>
+
+        <figcaption>
+          <h3>Reflexology</h3>
+          <p>
+            Reflexology is an alternative medicine suitable for all ages and involves application of
+            pressure to
+            the
+            feet and hands with specific thumb, finger, and hand techniques.
+          </p>
+          <a href="reflexology.html" class="read-more">
+            Read more
+          </a>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div>
+          <img src="swedishMassage.jpeg" alt="massage">
+        </div>
+
+        <figcaption>
+          <h3>Swedish Massage</h3>
+          <p>
+            A gentle, relaxing and rhythmical, full body massage which increases the oxygen flow in the
+            blood
+            and releases toxins from the muscles. Reducing emotional and physical stress, it stimulates the
+            skin
+            and soothes the nervous system.
+          </p>
+          <a href="swedishMassage.html" class="read-more">
+            Read more
+          </a>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div>
+          <img src="indianHeadMassage.jpeg" alt="massage">
+        </div>
+
+        <figcaption>
+          <h3>Indian Head Massage</h3>
+          <p>
+            Practised in India for over a thousand years and brought to the west in the 1970's, Indian Head
+            Massage now includes the scalp, face, ears, neck, shoulders and upper arms.
+          </p>
+          <a href="indianHeadMassage.html" class="read-more">
+            Read more
+          </a>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div>
+          <img src="stoneTherapy.jpeg" alt="massage">
+        </div>
+
+        <figcaption>
+          <h3>LA Stone Therapy</h3>
+          <p>
+            Polished and smooth, water- heated Basalt (lava rocks) stones are used to apply pressure and
+            heat to the body. Stones coated in oil can also be used to deliver various massaging strokes.
+          </p>
+          <a href="stoneTherapy.html" class="read-more">
+            Read more
+          </a>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div>
+          <img src="pamperDays.jpeg" alt="massage">
+        </div>
+
+        <figcaption>
+          <h3>Corporate Pamper Days</h3>
+          <p>
+            Corporate Pamper Days are an excellent way to celebrate a milestone in your business or simply
+            reward your
+            team! We can come to your premises and provide a range of treatments for you and your staff.
+          </p>
+          <a href="pamperDays.html" class="read-more">
+            Read more
+          </a>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <div>
+          <img src="massage.jpeg" alt="massage">
+        </div>
+
+        <figcaption>
+          <h3>Peer-to-Peer Massages</h3>
+          <p>
+            Our Peer-to-Peer Massage programme is aimed specifically at children aged 4-13 years.
+          </p>
+          <a href="peerToPeer.html" class="read-more">
+            Read more
+          </a>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <hr class="section-separator">
+
+  <section id="section--testimonials">
+    <h2>Testimonials</h2>
+
+    <div class="carousel">
+      <p class="arrow arrow--left">&#10094</p>
+
+      <div>
+        <figure class="testimonial">
+          <p>
+            <span class="quotation-mark">"</span>
+            Thank you for my fav massage. Highly recommended xxx
+            <span class="quotation-mark">"</span>
+          </p>
+          <figcaption>Lindsey Burrows</figcaption>
+        </figure>
+
+        <figure class="testimonial hidden">
+          <p>
+            <span class="quotation-mark">"</span>
+            As always, a fantastic job! Feel relaxed and refreshed after my sports massage. Thank you so
+            much x
+            <span class="quotation-mark">"</span>
+          </p>
+          <figcaption>Emma Chambers</figcaption>
+        </figure>
+
+        <figure class="testimonial hidden">
+          <p>
+            <span class="quotation-mark">"</span>
+            Life saver!! At the moment can't walk, sit or move around stage without a great deal of pain.
+            Decided to get professional help in the form of deep tissue massage. Afterwards, I felt like a
+            million dollars. Thought that it might not last and the pain would return the next day but it
+            didn't. Best decision I ever made...
+            <span class="quotation-mark">"</span>
+          </p>
+          <figcaption>Maggie Duguid</figcaption>
+        </figure>
+      </div>
+
+      <p class="arrow arrow--right">&#10095</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <img class="logo" src="logo-with-text.png" alt="">
+
+  <ul>
+    <li>
+      <a href="https://www.facebook.com/rrsportsmassage.co.uk" target="_blank">
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+    </li>
+    <li><a href="" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#top">Home</a></li>
+    <li><a href="#top" class="contact-button">Contact</a></li>
+    <li><a href="">Cookies</a></li>
+    <li><a href="">Privacy</a></li>
+  </ul>
+  <p class="copyright">© Ryan Henzell-Hill</p>
+</footer>
+
+</body>
+</html>
