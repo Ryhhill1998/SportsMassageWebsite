@@ -2,6 +2,15 @@
 const servicesDropdown = document.getElementById("services-dropdown");
 const servicesButton = document.getElementById("services-button");
 const services = document.querySelector(".services");
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 240) {
+        header.classList.add("shrink");
+    } else {
+        header.classList.remove("shrink");
+    }
+});
 
 const showServices = () => {
     servicesDropdown.classList.remove("hidden");

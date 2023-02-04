@@ -21,12 +21,17 @@ body {
 header {
     background-color: #d7f0f8;
     border-bottom: solid 5px #5fc3e5;
-    /*position: sticky;*/
-    /*top: 0;*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header.shrink .logo-container {
+    display: none;
 }
 
 header .container {
-    padding-top: 1em;
     margin: 0 auto;
     text-align: right;
 }
@@ -146,6 +151,7 @@ nav > ul > li {
 }
 
 .logo-container {
+    margin-top: 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -165,7 +171,7 @@ nav > ul > li {
 
 /* MAIN */
 main {
-    margin: 0 auto 5em;
+    margin: 280px auto 5em;
     min-height: 450px;
 }
 
@@ -459,11 +465,11 @@ footer a:hover {
     box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     background-color: #d7f0f8;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 20%;
-    z-index: 20;
+    z-index: 30;
     width: 90%;
     max-width: 450px;
     height: 520px;
@@ -553,8 +559,9 @@ form .submit-button:hover {
     position: fixed;
     height: 100%;
     width: 100%;
+    top: 0;
     background-color: rgba(0,0,0,0.6);
-    z-index: 2;
+    z-index: 20;
     display: none;
 }
 
