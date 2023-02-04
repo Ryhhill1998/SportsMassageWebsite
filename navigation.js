@@ -13,11 +13,11 @@ window.addEventListener("scroll", () => {
 });
 
 const showServices = () => {
-    servicesDropdown.classList.remove("hidden");
+    servicesDropdown.classList.remove("no-display");
 }
 
 const hideServices = () => {
-    servicesDropdown.classList.add("hidden");
+    servicesDropdown.classList.add("no-display");
 }
 
 const servicesIsHidden = () => servicesDropdown.classList.contains("hidden");
@@ -40,10 +40,10 @@ const hamburgerButton = document.getElementById("hamburger");
 const dropdownMenu = document.getElementById("dropdown-menu");
 
 const toggleDropdownMenu = () => {
-    if (dropdownMenu.classList.contains("hidden")) {
-        dropdownMenu.classList.remove("hidden");
+    if (dropdownMenu.classList.contains("no-display")) {
+        dropdownMenu.classList.remove("no-display");
     } else {
-        dropdownMenu.classList.add("hidden");
+        dropdownMenu.classList.add("no-display");
     }
 }
 

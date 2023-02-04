@@ -641,6 +641,10 @@ figure img:hover {
     transform: scale(1.1);
 }
 
+.no-display {
+    display: none;
+}
+
 .hidden {
     visibility: hidden;
 }
